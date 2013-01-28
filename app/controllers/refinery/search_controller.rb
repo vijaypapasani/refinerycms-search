@@ -5,7 +5,7 @@ module Refinery
     def show
       @results = Refinery::SearchEngine.search(params[:query], params[:page])
 
-      present(@page = Refinery::Page.find_by_link_url("/search"))
+      present(@page = Refinery::Page.find_by_link_url("/search111"))
     end
 
   end
