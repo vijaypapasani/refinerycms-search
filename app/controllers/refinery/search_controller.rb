@@ -3,7 +3,7 @@ module Refinery
 
   	# Display search results given the query supplied
     def show
-      @results = Refinery::SearchEngine.search(params[:query1], params[:page1])
+      @results = Refinery::SearchEngine.search(params[:query], params[:page])
 
       present(@page = Refinery::Page.find_by_link_url("/search"))
     end
